@@ -15,7 +15,7 @@ This repository contains basic exercises and practice tasks that cover a variety
 To run the examples in this repository, you will need to have Python 3.5 or higher installed. You can then use the `python3` command to run the script files. The scripts cover a variety of programming concepts and skills and are intended to be used as a learning resource.
 
 ## Author
-- [Kabingu Sammy] - [Github](https://github.com/kabingusammy) | [Twitter](https://twitter.com/kabingusammy)
+- Kabingu Sammy - [Github](https://github.com/kabingusammy) | [Twitter](https://twitter.com/kabingusammy)
 
 
 
