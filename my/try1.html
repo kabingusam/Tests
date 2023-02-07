@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Writer Extension</title>
+    <link rel="stylesheet" type="text/css" href="/ui/styles/popup.css">
+    <link rel="stylesheet" type="text/css" href="/ui/styles/sidebar.css">
+</head>
+
+<body>
+    <!-- Side Bar -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Change Tone</a>
+        <a href="#">Grammar Correction</a> 
+    </div>
+        <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Sidebar</button>
+    </div>
+
+<div class="frame">
+    <div class="write">
+        <h1>AI Writer</h1>
+        <p id="name">User: </p>
+        <textarea id="original-text"></textarea>
+        <button class="custom-btn" id="correct-grammar-btn">Correct Grammar</button>
+        <textarea id="corrected-text"></textarea>
+
+        <select id="tone-select">
+            <option value="neutral">Neutral</option>
+            <option value="formal">Formal</option>
+            <option value="friendly">Friendly</option>
+            <option value="sarcastic">Sarcastic</option>
+        </select>
+        <button id="change-tone-btn">Change Tone</button>
+        <textarea id="toned-text"></textarea>
+        
+        <button type="button" class="btn btn-danger" onclick="signOut();">Sign out</button>
+    </div>
+</div>
+    <script src="/scripts/sidebar.js"></script>
+    <script src="/scripts/popup.js"></script>
+    <script src="/scripts/content.js"></script>
+    <!-- <script src="/scripts/oauth.js"></script> -->
+</body>
+
+</html>
+
+function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+}
